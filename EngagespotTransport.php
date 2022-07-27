@@ -87,8 +87,7 @@ final class EngagespotTransport extends AbstractTransport
                     'icon' => $options['icon'] ?? '',
                     'url' => $options['url'] ?? '#',
                 ],
-                'send_to' => $sendToEveryone ? 'everyone' : 'identifiers',
-                'identifiers' => $identifiers ?? null,
+                'recipients' => $identifiers ?? null,
             ],
         ]);
 
